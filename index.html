@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- style css -->
+    <link rel="stylesheet" href="./dist/style.css" />
+    <!-- font-awesome css -->
+    <link rel="stylesheet" href="./dist/all.min.css" />
+    <style>
+      p {
+        color: #777;
+        font-size: 18px;
+        line-height: 1.6;
+      }
+      input[type="submit"] {
+        cursor: pointer;
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- start header -->
+    <nav class="container mx-auto p-6">
+      <div class="flex justify-between items-center">
+        <div class="py-2 px-6 logo flex gap-x-2">
+          <img src="images/tailwind-css-icon.png" class="w-10 h-8" alt="" />
+          <h1 class="text-2xl font-medium">tailwindcss</h1>
+        </div>
+        <div class="hidden md:flex space-x-6">
+          <a href="#" class="text-slate-900 hover:text-orange-500 py-2 px-6"
+            >Portfolio</a
+          >
+          <a href="#" class="text-slate-900 hover:text-orange-500 py-2 px-6"
+            >About</a
+          >
+          <a
+            href="#contact"
+            class="text-slate-900 hover:text-orange-500 py-2 px-6"
+            >Contact</a
+          >
+          <a
+            href="#contact"
+            class="text-slate-900 hover:text-orange-500 py-2 px-6"
+            >Social</a
+          >
+          <a
+            href="#"
+            class="transition-colors duration-200 py-2 px-6 rounded-full bg-orange-500 text-white hover:bg-slate-900"
+            >Call Me</a
+          >
+        </div>
+
+        <button id="btn-menu" class="md:hidden">
+          <i class="fa-solid fa-bars fa-2x"></i>
+        </button>
+      </div>
+      <div>
+        <div
+          id="mobile-menu"
+          class="hidden flex flex-col absolute items-center right-6 left-6 bg-gray-50 space-y-3 font-bold text-lg drop-shadow-lg py-8 border border-gray-300"
+        >
+          <a href="#">Portfolio</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+          <a href="#contact">Social</a>
+          <a
+            href="#"
+            class="transition-colors duration-200 py-2 px-6 rounded-full bg-orange-500 text-white hover:bg-slate-900"
+            >Call Me</a
+          >
+        </div>
+      </div>
+    </nav>
+    <!-- end header -->
+
+    <!-- start landing -->
+    <section id="home" class="my-16">
+      <div
+        class="py-2 container mx-auto px-6 space-x-6 flex flex-col-reverse md:flex-row"
+      >
+        <div
+          class="md:w-1/2 flex flex-col space-y-5 py-8 justify-center text-center md:text-left text-slate-900"
+        >
+          <div class=" ">
+            <h1 class="font-bold text-3xl md:text-5xl">
+              Rapidly build modern websites without ever leaving your HTML.
+            </h1>
+            <p class="my-8">
+              A utility-first CSS framework packed with classes like
+              flex,text-center and rotate-90 that can be composed to build any
+              design, directly in your markup.
+            </p>
+          </div>
+          <a
+            href="#"
+            class="transition-colors duration-200 py-2 px-6 self-center md:self-start rounded-full bg-orange-500 text-white hover:bg-slate-900"
+            >Get Started</a
+          >
+        </div>
+
+        <div class="md:w-1/2">
+          <img
+            src="/images/undraw_online_test_re_kyfx.svg"
+            class="max-w-full"
+            alt=""
+          />
+        </div>
+      </div>
+    </section>
+    <!-- end landing -->
+
+    <!-- start about  -->
+    <section id="about" class="my-32 container mx-auto text-center">
+      <h4 class="text-4xl font-bold mb-8">
+        "Best practices" don't actually work.
+      </h4>
+      <p class="px-10 mb-8">
+        I've written a few thousand words on why traditional "semantic class
+        names" are the reason CSS is hard to maintain, but the truth is you're
+        never going to believe me until you actually try if. If you cna suppress
+        the urge to retch long enough to give it a chance , I really think you
+        'll wonder how you ever worked with CSS any other way.
+      </p>
+      <div
+        class="flex flex-col md:flex-row mt-16 space-x-0 space-y-14 md:space-x-5 md:space-y-0"
+      >
+        <div
+          class="md:w-1/3 md:space-y-3 flex flex-col p-6 space-y-2 rounded-lg border border-slate-200 bg-slate-100 items-center"
+        >
+          <img
+            src="images/adam.f69b0b90.jpg"
+            class="rounded-full w-20 -mt-16 bg-white"
+            alt=""
+          />
+          <h2 class="font-bold">Adam Sandler</h2>
+          <p class="">
+            The way I wrote it changed frequently. It's not a coincidence.
+            Tailwind was realeased the same year. It might look wrong. But spend
+            time with tit and you'll realize semantic CSS was a 20 year mistake.
+          </p>
+        </div>
+        <div
+          class="md:w-1/3 md:space-y-3 flex flex-col p-6 space-y-2 rounded-lg border border-slate-200 bg-slate-100 items-center"
+        >
+          <img
+            src="images/avatar01.png"
+            class="rounded-full w-20 -mt-16 bg-white"
+            alt=""
+          />
+          <h2 class="font-bold">Madeline Bauer</h2>
+          <p class="">
+            I have no design skills and with Tailwind I can actually make good
+            looking websites with ease and it's evrything I ever wanted in a CSS
+            framework.
+          </p>
+        </div>
+        <div
+          class="md:w-1/3 md:space-y-3 flex flex-col p-6 space-y-2 rounded-lg border border-slate-200 bg-slate-100 items-center"
+        >
+          <img
+            src="images/avatar04.png"
+            class="rounded-full w-20 -mt-16 bg-white"
+            alt=""
+          />
+          <h2 class="font-bold">Marcel Khalifa</h2>
+          <p class="">
+            I started using @tailwindcss. I instantly fell in love with thier
+            responsive modifiers through documentation, and how easy it was
+            customizing color palettes.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- end about  -->
+
+    <!-- start contact -->
+    <footer id="contact" class="bg-slate-900">
+      <div
+        class="p-10 container mx-auto space-y-4 items-center text-center flex flex-col md:flex-row md:justify-between"
+      >
+        <div>
+          <div class="logo flex gap-x-2">
+            <img src="images/tailwind-css-icon.png" class="w-10 h-8" alt="" />
+            <h1 class="text-2xl font-medium text-white">tailwindcss</h1>
+          </div>
+          <ul class="mt-3 flex flex-row space-x-4 text-2xl">
+            <li>
+              <a href=""><i class="fa-brands fa-facebook text-white"></i></a>
+            </li>
+            <li>
+              <a href=""><i class="fa-brands fa-instagram text-white"></i></a>
+            </li>
+            <li>
+              <a href=""><i class="fa-brands fa-youtube text-white"></i></a>
+            </li>
+            <li>
+              <a href=""><i class="fa-brands fa-linkedin text-white"></i></a>
+            </li>
+            <li>
+              <a href=""><i class="fa-brands fa-twitter text-white"></i></a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="text-white flex flex-row space-x-6 md:space-x-20">
+          <div class="flex flex-col space-y-2">
+            <a href="#home">Home</a>
+            <a href="">About</a>
+            <a href="">Contact</a>
+          </div>
+          <div class="flex flex-col space-y-2">
+            <a href="">Imprint</a>
+            <a href="">Privacy</a>
+            <a href="">Credits</a>
+          </div>
+        </div>
+
+        <div>
+          <form action="#" class="space-x-2 space-y-2">
+            <input
+              type="text"
+              placeholder="Subscribe to Newsletter"
+              class="px-4 py-2 rounded-full"
+            />
+            <input
+              type="submit"
+              value="Go"
+              class="cursor-pointer text-white bg-orange-500 rounded-full px-4 py-2 font-bold text-lg"
+            />
+          </form>
+        </div>
+      </div>
+      <div class="text-white text-lg text-center -mb-10 mt-8 bg-cyan-600">
+        Copyright <span class="text-orange-500">&copy;2024</span>, All Right
+        Reserved
+      </div>
+    </footer>
+    <!-- end contact -->
+  </body>
+  <script src="js/script.js"></script>
+</html>
